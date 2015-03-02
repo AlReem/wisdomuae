@@ -106,7 +106,7 @@
                                       </div>
                                       <div class="form-group">
                                           <label>Date of birth</label>
-                                          <input class="form-control" size="10" type="date" value="12-02-1980" data-date="12-02-1980" data-date-format="dd-mm-yyyy" data-date-viewmode="years">
+                                          <input class="form-control" size="10" type="date" value="1980-02-12">
                                       </div>
                                       <div class="form-group">
                                           <label>Profession</label>
@@ -154,38 +154,45 @@
                                     <!-- /.panel-heading -->
                                     <div class="panel-body">
                                         <div class="table-responsive">
-                                            <table class="table table-striped table-bordered table-hover">
+                                          <form role="form">
+                                            <table id="family-table" class="table table-striped table-bordered table-hover">
                                                 <thead>
                                                     <tr>
-                                                        <th>#</th>
-                                                        <th>First Name</th>
-                                                        <th>Last Name</th>
-                                                        <th>Username</th>
+                                                        <th>Name</th>
+                                                        <th>Relation</th>
+                                                        <th>Profession</th>
+                                                        <th>Mobile</th>
+                                                        <th>Email</th>
+                                                        <th>Action</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Mark</td>
-                                                        <td>Otto</td>
-                                                        <td>@mdo</td>
+                                                    <tr id="family-member-01">
+                                                      <div class="form-group">
+                                                        <td><input class="form-control" type="text" placeholder="Enter Name"></td>
+                                                        <td><input class="form-control" type="text" placeholder="Enter Relationship"></td>
+                                                        <td><input class="form-control" type="text" placeholder="Enter Profession"></td>
+                                                        <td><input class="form-control" type="number" placeholder="Enter Mobile"></td>
+                                                        <td><input class="form-control" type="email" placeholder="Enter email"></td>
+                                                        <td><a class="delete-family-member" href=""><i class="fa fa-close fa-fw"></i></a></td>
+                                                      </div>
                                                     </tr>
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td>Jacob</td>
-                                                        <td>Thornton</td>
-                                                        <td>@fat</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>3</td>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
+                                                    <tr style="display:none" id="new-family-member">
+                                                      <div class="form-group">
+                                                        <td><input class="form-control" type="text" placeholder="Enter Name"></td>
+                                                        <td><input class="form-control" type="text" placeholder="Enter Relationship"></td>
+                                                        <td><input class="form-control" type="text" placeholder="Enter Profession"></td>
+                                                        <td><input class="form-control" type="number" placeholder="Enter Mobile"></td>
+                                                        <td><input class="form-control" type="email" placeholder="Enter email"></td>
+                                                        <td><a class="delete-family-member" href=""><i class="fa fa-close fa-fw"></i></a></td>
+                                                      </div>
                                                     </tr>
                                                 </tbody>
                                             </table>
+                                          </form>
                                         </div>
                                         <!-- /.table-responsive -->
+                                        <button id="add-family-member" type="button" class="btn btn-default">Add member</button>
                                     </div>
                                     <!-- /.panel-body -->
                                 </div>
