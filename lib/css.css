@@ -1,0 +1,21 @@
+.table-responsive    { display: table }
+.tr       { display: table-row }
+.thead    { display: table-header-group }
+.tbody    { display: table-row-group }
+.tfoot    { display: table-footer-group }
+.col      { display: table-column }
+.colgroup { display: table-column-group }
+.tr td,.tr th  { display: table-cell }
+.caption  { display: table-caption }
+
+@media (max-width: 700px) {
+.table    { display: table }
+.tr       { display: block }
+.thead    { display: none }
+.tbody    { display: block }
+.tfoot    { display: block }
+.col      { display: none }
+.colgroup { display: none }
+.tr td,.tr th { display: inline-block; border: 2px solid #DDD; }
+.caption  { display: block }
+}
