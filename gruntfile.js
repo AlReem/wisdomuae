@@ -2,8 +2,15 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		watch: {
-			css: {
+			scss: {
 				files: 'scss/*.scss',
+				// tasks: ['compass'/*,'sass'*/],
+				options: {
+			    	livereload: 35729
+			    }
+			},
+			css: {
+				files:  '**/*.css',
 				// tasks: ['compass'/*,'sass'*/],
 				options: {
 			    	livereload: 35729
@@ -11,6 +18,12 @@ module.exports = function(grunt) {
 			},
 			html: {
 				files: '**/*.html',
+				options: {
+			    	livereload: 35729
+			    }
+			},
+			js: {
+				files: '**/*.js',
 				options: {
 			    	livereload: 35729
 			    }
