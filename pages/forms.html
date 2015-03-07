@@ -75,8 +75,8 @@
                             <div class="row">
                                 <div class="col-lg-4">
                                       <div class="form-group">
-                                          <label>Unit</label>
-                                          <select class="form-control">
+                                          <label for="unit">Unit</label>
+                                          <select class="form-control" id="unit" name="unit">
                                               <option>Abu Dhabi</option>
                                               <option>Ajman</option>
                                               <option>Al Ain</option>
@@ -88,30 +88,30 @@
                                           </select>
                                       </div>
                                        <div class="form-group">
-                                          <label>Name</label>
-                                          <input class="form-control" placeholder="Enter Name">
+                                          <label for="name">Name</label>
+                                          <input class="form-control" id="name" name="name" placeholder="Enter Name">
                                       </div>                                        
                                       <div class="form-group">
-                                          <label>Father's Name</label>
-                                          <input class="form-control" placeholder="Enter father's name">
+                                          <label for="fathersname">Father's Name</label>
+                                          <input id="fathersname" name="fathersname" class="form-control" placeholder="Enter father's name">
                                       </div>
                                 </div>
                                 <!-- /.col-lg-4 number-1 -->
                                 <div class="col-lg-4" id="col-number-2">
                                       <div class="form-group">
-                                          <label>Gender</label>
-                                          <select class="form-control">
+                                          <label for="gender">Gender</label>
+                                          <select id="gender" name="gender" class="form-control">
                                               <option>Male</option>
                                               <option>Female</option>
                                           </select>
                                       </div>
                                       <div class="form-group">
-                                          <label>Date of birth</label>
-                                          <input class="form-control" size="10" type="date" value="1980-02-12">
+                                          <label for="dateofbirth">Date of birth</label>
+                                          <input id="dateofbirth" name="dateofbirth" class="form-control" size="10" type="date" value="1980-02-12">
                                       </div>
                                       <div class="form-group">
                                           <label for="profession">Profession</label>
-                                          <input id="profession-input" name="profession" class="form-control" placeholder="Enter profession" list="list-of-professions">
+                                          <input id="profession" name="profession" class="form-control" placeholder="Enter profession" list="list-of-professions">
                                           <datalist id="list-of-professions"><br/>Suggestions:
                                               <option value="business-person">Business Person</option>
                                               <option value="doctor">Doctor</option>
@@ -129,16 +129,16 @@
                                 <!-- /.col-lg-4 number-2  -->
                                 <div class="col-lg-4" id="col-number-3">
                                       <div class="form-group">
-                                          <label>Mobile 1</label>
-                                          <input class="form-control" type="tel" placeholder="Enter Mobile Number">
+                                          <label for="mobile1">Mobile 1</label>
+                                          <input id="mobile1" name="mobile1" class="form-control" type="tel" placeholder="Enter Mobile Number">
                                       </div>
                                       <div class="form-group">
-                                          <label>Mobile 2</label>
-                                          <input class="form-control" type="tel" placeholder="Enter Mobile Number">
+                                          <label for="mobile2">Mobile 2</label>
+                                          <input id="mobile1" name="mobile2" class="form-control" type="tel" placeholder="Enter Mobile Number">
                                       </div>
                                       <div class="form-group">
-                                          <label>Email Address</label>
-                                          <input class="form-control" type="email" placeholder="Enter email">
+                                          <label for="emailaddress">Email Address</label>
+                                          <input id="emailaddress" name="emailaddress" class="form-control" type="email" placeholder="Enter email">
                                       </div>
                                 </div>
                             </div>
@@ -146,53 +146,53 @@
                             <div class="row">
                                 <div class="col-lg-4">
                                       <div class="form-group">
-                                          <label>India Address</label>
-                                          <textarea class="form-control" rows="3"></textarea>
+                                          <label for="indiaaddress">India Address</label>
+                                          <textarea id="indiaaddress" name="indiaaddress" class="form-control" rows="3"></textarea>
                                       </div>
                                       <div class="form-group">
-                                          <label>Present Address</label>
-                                          <textarea class="form-control" rows="3"></textarea>
+                                          <label for="presentaddress">Present Address</label>
+                                          <textarea id="presentaddress" name="presentaddress" class="form-control" rows="3"></textarea>
                                       </div>
                                       <div class="form-group">
                                             <label>Please tick as applicable</label>
                                             <div class="checkbox">
                                                 <label>
-                                                    <input type="checkbox" value="">I am interested in your Dawa Activities
+                                                    <input id="optionDawaAct" name="optionDawaAct" type="checkbox" value="">I am interested in your Dawa Activities
                                                 </label>
                                             </div>
                                             <div class="checkbox">
                                                 <label>
-                                                    <input type="checkbox" value="">I am looking for a Madrassa for my kids
+                                                    <input id="optionMadrassa" name="optionMadrassa" type="checkbox" value="">I am looking for a Madrassa for my kids
                                                 </label>
                                             </div>
                                             <div class="checkbox">
                                                 <label>
-                                                    <input type="checkbox" value="">I need Zakath Cell Service
+                                                    <input id="optionZakathCell" name="optionZakathCell" type="checkbox" value="">I need Zakath Cell Service
                                                 </label>
                                             </div>
                                             <div class="checkbox">
                                                 <label>
-                                                    <input type="checkbox" value="">I like to contribute my skills towards Dawa
+                                                    <input id="optionSkillsDawa" name="optionSkillsDawa" type="checkbox" value="">I like to contribute my skills towards Dawa
                                                 </label>
                                             </div>
                                             <div class="checkbox">
                                                 <label>
-                                                    <input type="checkbox" value="">I want to participate in Arabic learning Class
+                                                    <input id="optionArabicClass" name="optionArabicClass" type="checkbox" value="">I want to participate in Arabic learning Class
                                                 </label>
                                             </div>
                                             <div class="checkbox">
                                                 <label>
-                                                    <input type="checkbox" value="">I can support your charity & welfare projects
+                                                    <input id="optionCharityProjects" name="optionCharityProjects" type="checkbox" value="">I can support your charity & welfare projects
                                                 </label>
                                             </div>
                                             <div class="checkbox">
                                                 <label>
-                                                    <input type="checkbox" value="">Send Dawa materials to my email
+                                                    <input id="optionDawaEmail" name="optionDawaEmail" type="checkbox" value="">Send Dawa materials to my email
                                                 </label>
                                             </div>
                                             <div class="checkbox">
                                                 <label>
-                                                    <input type="checkbox" value="">Send SMS about classes / Dawa Events
+                                                    <input id="optionSMS" name="optionoptionSMS" type="checkbox" value="">Send SMS about classes / Dawa Events
                                                 </label>
                                             </div>
                                         </div>
@@ -220,23 +220,23 @@
                                                 <tbody>
                                                     <tr id="family-member-01"  class="tr">
                                                       <div class="form-group">
-                                                        <td><input class="form-control" type="text" placeholder="Enter Name"></td>
-                                                        <td><input class="form-control" type="text" placeholder="Enter Relationship"></td>
-                                                        <td><input class="form-control" type="text" placeholder="Enter Profession"></td>
-                                                        <td><input class="form-control" type="number" placeholder="Enter Mobile"></td>
-                                                        <td><input class="form-control" type="email" placeholder="Enter email"></td>
-                                                        <td class="tcheckbox"><input type="checkbox" value=""><br/>In UAE</input></td>
-                                                        <td class="delete"><a class="delete-family-member" href=""><i class="fa fa-close fa-fw"></i></a></td>
+                                                        <td><input id="FMName_01" name="FMName_01" class="form-control" type="text" placeholder="Enter Name"></td>
+                                                        <td><input id="FMRelationship_01" name="FMRelationship_01" class="form-control" type="text" placeholder="Enter Relationship"></td>
+                                                        <td><input id="FMProfession_01" name="FMProfession_01" class="form-control" type="text" placeholder="Enter Profession" list="list-of-professions"></td>
+                                                        <td><input id="FMMobile_01" name="FMMobile_01" class="form-control" type="number" placeholder="Enter Mobile"></td>
+                                                        <td><input id="FMemail_01" name="FMemail_01" class="form-control" type="email" placeholder="Enter email"></td>
+                                                        <td class="tcheckbox"><input id="FMInUAE_01" name="FMInUAE_01" type="checkbox" value=""><br/>In UAE</input></td>
+                                                        <td class="delete"><i class="fa fa-close fa-fw"></i></td>
                                                       </div>
                                                     </tr>
-                                                    <tr style="display:none" id="new-family-member"  class="tr">
+                                                    <tr style="display:none" id="family-member-"  class="tr">
                                                       <div class="form-group">
-                                                        <td><input class="form-control" type="text" placeholder="Enter Name"></td>
-                                                        <td><input class="form-control" type="text" placeholder="Enter Relationship"></td>
-                                                        <td><input class="form-control" type="text" placeholder="Enter Profession"></td>
-                                                        <td><input class="form-control" type="number" placeholder="Enter Mobile"></td>
-                                                        <td><input class="form-control" type="email" placeholder="Enter email"></td>
-                                                        <td class="tcheckbox"><input type="checkbox" value=""><br/>In UAE</input></td>
+                                                        <td><input id="FMName_" name="FMName_" class="form-control" type="text" placeholder="Enter Name"></td>
+                                                        <td><input id="FMRelationship_" name="FMRelationship_" class="form-control" type="text" placeholder="Enter Relationship"></td>
+                                                        <td><input id="FMProfession_" name="FMProfession_" class="form-control" type="text" placeholder="Enter Profession"></td>
+                                                        <td><input id="FMMobile_" name="FMMobile_" class="form-control" type="number" placeholder="Enter Mobile"></td>
+                                                        <td><input id="FMemail_" name="FMemail_" class="form-control" type="email" placeholder="Enter email"></td>
+                                                        <td class="tcheckbox"><input id="FMInUAE_" name="FMInUAE_" type="checkbox" value=""><br/>In UAE</input></td>
                                                         <td class="delete"><a class="delete-family-member" href=""><i class="fa fa-close fa-fw"></i></a></td>
                                                       </div>
                                                     </tr>
